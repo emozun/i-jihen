@@ -1,0 +1,410 @@
+@charset "UTF-8";
+/*------------------------------------
+ *base
+ *------------------------------------ */
+
+ html{
+   font-size: 62.5%;
+ }
+
+ *, *::before, *::after{
+   box-sizing: border-box;
+ }
+
+ a:link, a:visited, a:hover, a:active{
+   color: #6e3a59;
+   text-decoration:none;
+ }
+
+ body{
+   width:auto;
+   height:auto;
+   background-color:grey;
+   font-size:16px;
+    }
+
+ .clearfix::after {
+   content: '';
+   display: block;
+   clear: both;
+ }
+
+ /*===========================
+ *header
+ ===========================*/
+.background{
+  width:1000px;
+  min-height:80%;
+  height:auto;
+
+}
+
+.triangle-top{
+  display:block;
+  width:auto;
+  border-top: 0px solid #ffd700;
+  border-left: 1000px solid #ffd700;
+  border-right: 0px solid transparent;
+  border-bottom: 100px solid transparent;
+  position: fixed;
+  z-index: 1;
+
+}
+
+
+/*===========================
+*main
+===========================*/
+.wrapper{
+  max-width:90%;
+  height:auto;
+  margin:50px auto;
+  background-color: pink;
+  position:relative;
+  margin:0 auto;
+    }
+
+.headermenu{
+  width:auto;
+  height:auto;
+}
+
+.i-jihenicon{
+  float:left;
+  position: absolute;
+  z-index:2;
+  width:25%;
+}
+
+
+.logo{
+  height:auto;
+  margin-top: 25px;
+  width:100%;
+}
+
+.menupart{
+  float:right;
+  width:75%;
+  display: inline-block;
+}
+
+
+.menu{
+  height:auto;
+  word-wrap: break-word;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.menu>li{
+  display: inline-block;
+  font-family:corbel;
+  font-size:1.5rem;
+  line-height: 3rem;
+  font-weight: bold;
+  letter-spacing:2px;
+}
+
+.menu>li a{
+  padding: 8px ;
+}
+
+/*===========================
+      *main-背景
+===========================*/
+
+.main_contents{
+  width:auto;
+  height:auto;
+  background-color: #fff;
+  position: relative;
+  padding-bottom: 150px;
+  overflow: hidden;
+/*  background-image: url("../img/img_animetop_03-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;*/
+  border: 2px solid red;
+}
+
+.haikei{
+  width:75%;
+  height:auto;
+  margin:5px 12.5% 0 12.5%;
+  position:absolute;
+  z-index:1000;
+}
+
+
+.haikei-img{
+  width:100%;
+  }
+
+/*===========================
+*左メニュー
+===========================*/
+.main-left{
+  float:left;
+  position:relative;
+  z-index: 1001;
+  margin-left: 50px;
+    }
+
+.bansen{
+  margin-top: 20px;
+  width:80%;
+}
+
+.illustbox{
+  width:70%;
+}
+
+.list{
+ list-style: none;
+ width:100%;
+}
+
+.list>li{
+  margin-top:40px;
+}
+
+.list>li img{
+  transition: 0.3s ;
+}
+.list>li:hover img{
+  opacity:0.5;
+}
+
+
+
+.content_header{
+  position:relative;
+}
+
+.content_header::before{
+  content: "";
+  position:absolute;
+  z-index:5;
+  width:100px;
+  height:auto;
+  background:black;
+  content:"aaa";
+  text-align:center;
+  color:#fff;
+  font-family:'arial';
+  margin-top: -15px;
+}
+
+.content_header_BD::before{
+  content: "";
+  position:absolute;
+  z-index:5;
+  width:150px;
+  height:20px;
+  background:black;
+  content:"Blue-ray&DVD >>";
+  text-align:center;
+  color:#fff;
+  font-family:'arial';
+  margin-top: -20px;
+}
+
+.content_header_EV::before{
+  content: "";
+  position:absolute;
+  z-index:5;
+  width:150px;
+  height:20px;
+  background:black;
+  content:"EVENT >>";
+  text-align:center;
+  color:#fff;
+  font-family:'arial';
+  margin-top: -20px;
+}
+
+.content_header_NEWS::before{
+  content: "";
+  position:absolute;
+  z-index:5;
+  width:150px;
+  height:20px;
+  background:black;
+  content:"NEWS >>";
+  text-align:center;
+  color:#fff;
+  font-family:'arial';
+  margin-top: -20px;
+}
+
+.content_header_TWITTER::before{
+  content: "";
+  position:absolute;
+  z-index:5;
+  width:150px;
+  height:20px;
+  background:#6495ed;
+  content:"TWITTER >>";
+  text-align:center;
+  color:#fff;
+  font-family:'arial';
+  margin-top: -20px;
+}
+
+
+.content_header_MV::before{
+  content: "";
+  position:absolute;
+  z-index:5;
+  width:150px;
+  height:20px;
+  background:black;
+  content:"MOVIE >>";
+  text-align:center;
+  color:#fff;
+  font-family:'arial';
+  margin-top: -20px;
+}
+
+
+.hottopic{
+  width:100%;
+}
+
+/*===========================
+*右メニュー
+===========================*/
+
+.main-right{
+  float:right;
+  position:relative;
+  z-index: 10;
+  width:25%;
+  margin-right: 30px;
+  z-index:1002;
+  }
+
+.illustbox-right{
+width:100%;
+  }
+
+.news{
+  background-color: #fff;
+
+}
+
+.a{
+  width:100%;
+  height:80px;
+  border-bottom: 1px solid grey;
+  position:relative;
+}
+
+.a-contents{
+  margin:10px 15px 10px 15px;
+}
+
+.date{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.event{
+    display: inline-block;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color:#fff;
+    padding:3px;
+    margin-bottom: 15px;
+}
+
+.newstext{
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+
+.a::before{
+  content: "";
+  top:0;
+  right:0;
+  border-bottom:4em solid transparent;
+  border-right:4em solid #f94d78;
+  position:absolute;
+  z-index:100;
+}
+
+.a::after{
+  content:"New";
+  display: block;
+  top:13px;
+  transform: rotate(45deg);
+  color:#fff;
+  right:0;
+  position:absolute;
+  z-index:101;
+}
+
+/*===========================
+*fotter
+===========================*/
+
+.footermenu{
+  width:auto;
+  height:auto;
+}
+
+.i-jihenicon{
+  float:left;
+  position: absolute;
+  z-index:2;
+  width:25%;
+}
+
+.logo_under{
+  height:auto;
+  margin-top: 25px;
+  width:100%;
+}
+
+.menupart_under{
+  float:right;
+  width:75%;
+  display: inline-block;
+}
+
+
+.menu_under{
+  height:auto;
+  word-wrap: break-word;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.menu_under>li{
+  display: inline-block;
+  font-family:corbel;
+  font-size:1.5rem;
+  line-height: 3rem;
+  font-weight: bold;
+  letter-spacing:2px;
+}
+
+.menu>li a{
+  padding: 8px ;
+}
+
+
+.triangle-down{
+  border-bottom: 0px solid #ffd700;
+  border-right: 1500px solid #ffd700;
+  border-left: 0px solid transparent;
+  border-top: 150px solid transparent;
+  position:absolute;
+  z-index:200;
+  }
